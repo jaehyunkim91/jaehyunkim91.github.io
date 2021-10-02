@@ -1,24 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
-.navbar {
-  align-items: left;
-}
+body {
+  font-family: "Poppins", sans-serif;
+} /* why this doensn't work*/
 
+/* top two elements, logo and navbar*/
 .logo {
   padding-top: 12px;
   padding-left: 4%;
   padding-bottom: 20px;
 }
 
-.profile {
+.profilesAndCart {
   display: block;
+  /*how do move this to the right*/
 }
 
 nav {
+  align-items: left;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 4%;
@@ -42,29 +45,121 @@ a {
   font-weight: 400;
 }
 
-p {
-  color: #555;
+/*heroSeciton */
+.heroSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.col-1 {
+.heroCol-1 {
+  flex-basis: 68%;
+  min-width: 300px;
+}
+
+.heroCol-2 {
+  flex-basis: 32%;
+  min-width: 300px;
+  padding-left: 20px;
+}
+
+.heroCol-1 img {
+  max-width: 100%;
+}
+
+.heroCol-1 {
   position: relative;
 }
 
-.col-1 h1 {
+.heroCol-1 h1 {
   font-size: 48px;
   color: rgb(223, 106, 106);
 }
 
-.heroText {
+.heroImageText {
   position: absolute;
   top: 32px;
   left: 42px;
   background-color: white;
 }
 
-.row {
+.CTAbutton {
+  display: inline-block;
+  background: rgb(223, 106, 106);
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.CTAbutton:hover {
+  background: rgb(132, 106, 106);
+}
+
+#shopByActivity {
+  margin-left: 40px;
+}
+
+/* main section*/
+
+.mainSection {
+  max-width: 84%;
+  margin: auto;
+}
+.activityThumbnail {
+  margin: auto;
   display: flex;
-  align-items: left;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.thumbnailCol-2 {
+  flex-basis: 50%;
+  min-width: 250px;
+  position: relative;
+}
+
+.thumbnailCol-2 img {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.thumbnailCol-2 {
+}
+
+.thumbnailCol-2 h3 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.thumbnailTextBig {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.thumbnailCol-4 {
+  flex-basis: 25%;
+}
+
+.thumbnailCol-4 img {
+  max-width: 100%;
+  padding: 20px;
+
+  .thumbnailCol-4 {
+    position: relative;
+  }
+
+  .thumbnailCol-4 h3 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .thumbnailTextSmall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
 }

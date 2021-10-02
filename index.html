@@ -5,69 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muddy Paws Adventure | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img src="image/logo.png" width="240px" alt="Muddy Paws Logo" />
-        </div>
-        <img
-          class="profile"
-          src="image/myAccount.png"
-          width="32px"
-          height="32px"
-          alt="profile"
-        />
-        <img
-          class="cart"
-          src="image/cart.png"
-          width="32px"
-          height="32px"
-          alt="cart"
-        />
-        <nav>
-          <ul>
-            <li><a href="">Harness</a></li>
-            <li><a href="">Leash</a></li>
-            <li><a href="">Storage</a></li>
-            <li><a href="">Gears</a></li>
-            <li><a href="">Toys</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="row">
-        <div class="col-1">
-          <img src="image/mainHero.png" width="900px" alt="Main heor image" />
-          <div class="heroText">
-            <h1>
-              You! get back <br />
-              out there!
-            </h1>
-            <p>With our favorite gears</p>
-          </div>
-        </div>
-
-        <div class="col-2">
-          <h2>Tru-fit Harness</h2>
-          <p>
-            Our newest and most missed harness with fall colors has returned.
-            Snag yours today!
-          </p>
-        </div>
-      </div>
-  <!----- features categories ------------->
-      <div class = "categories">
-        <div class = "row">
-          <div class  "col-3">
-            <img src = "image/hiking.png" alt = "hiking">
-          </div>
-        </div>
-
-      </div>
-
+    <!--- logo and profile/cart section -->
+    <div class="logo">
+      <img src="image/logo.png" width="240px" alt="Muddy Paws Logo" />
     </div>
+    <div class="profilesAndCart">
+      <img src="image/myAccount.png" width="32px" height="32px" alt="profile" />
+      <img src="image/cart.png" width="32px" height="32px" alt="cart" />
+    </div>
+
+    <!--- pink navigation bar -->
+    <nav>
+      <ul>
+        <li><a href="">Harness</a></li>
+        <li><a href="">Leash</a></li>
+        <li><a href="">Storage</a></li>
+        <li><a href="">Gears</a></li>
+        <li><a href="">Toys</a></li>
+      </ul>
+    </nav>
+    <!---  hero section -->
+    <div class="heroSection">
+      <div class="heroCol-1">
+        <img src="image/mainHero.png" alt="Main Hero Image" />
+        <div class="heroImageText">
+          <h1>
+            You! get back <br />
+            out there!
+          </h1>
+          <p>With our favorite gears</p>
+        </div>
+      </div>
+
+      <div class="heroCol-2">
+        <h2>Tru-fit Harness</h2>
+        <p>
+          Our newest and most <br />
+          missed harness with fall <br />colors has returned. Snag <br />
+          yours today!
+        </p>
+        <a href="" class="CTAbutton"> Shop Now</a>
+      </div>
+    </div>
+
+    <div id="shopByActivity">
+      <h1>Shop by Activity</h1>
+    </div>
+    <!--- main body section -->
+    <div class="mainSection">
+      <!--- first row of thumbnails --->
+      <div class="activityThumbnail">
+        <div class="thumbnailCol-2">
+          <img src="image/swimming.png" alt="swimming" />
+          <div class="thumbanilTextBig">
+            <h3>Swimming</h3>
+          </div>
+        </div>
+        <div class="thumbnailCol-2">
+          <img src="image/hiking.png" alt="hiking" />
+        </div>
+      </div>
+
+      <!---- second row of thumbnails ------>
+      <div class="activityThumbnail">
+        <div class="thumbnailCol-4">
+          <img src="image/kayaking.png" alt="kayaking" />
+          <div class="thumbanilTextSmall">
+            <h3>Kayaking</h3>
+          </div>
+        </div>
+        <div class="thumbnailCol-4">
+          <img src="image/trailing.png" alt="trailing" />
+        </div>
+        <div class="thumbnailCol-4">
+          <img src="image/camping.png" alt="camping" />
+        </div>
+        <div class="thumbnailCol-4">
+          <img src="image/flying.png" alt="flying" />
+        </div>
+      </div>
+    </div>
+
+    --
   </body>
 </html>
