@@ -35,7 +35,7 @@ body {
   padding: 10px 6px;
   font-size: 16px;
   border-radius: 5px;
-  width: 200px
+  width: 200px;
 }
 
 .profileContainer {
@@ -119,15 +119,15 @@ nav a {
 
 /*-- Divider--*/
 .textDivider {
-  margin: 40px 0 20px 40px
+  margin: 40px 0 20px 40px;
 }
 .textDivider h1 {
   font-size: 24px;
 }
 
-/*-- Activity Section --*/ 
+/*-- Activity Section --*/
 .activitySection {
-  max-width: 84%;
+  max-width: 90%;
   margin: auto;
 }
 /*-- Firt row --*/
@@ -147,7 +147,7 @@ nav a {
   padding: 10px;
 }
 
-.row-1-overlayText{
+.row-1-overlayText {
   position: absolute;
   width: 200px;
   top: 50%;
@@ -188,7 +188,7 @@ nav a {
   padding: 10px;
 }
 
-.row-2-overlayText{
+.row-2-overlayText {
   position: absolute;
   width: 120px;
   top: 50%;
@@ -221,19 +221,17 @@ nav a {
 /*--Footer--*/
 .footer {
   background: #f6f6e3;
-  color: #8a8a8a;
+  color: #000;
   font-size: 14px;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .linkContainer {
   display: flex;
   width: 280px;
-  justify-content: space-between
- 
+  justify-content: space-between;
 }
 
 .footer ul {
@@ -246,7 +244,7 @@ nav a {
 }
 .followUs a img {
   width: 32px;
-  height: 32px
+  height: 32px;
 }
 
 .signUp {
@@ -257,36 +255,24 @@ nav a {
 }
 
 .followUs a {
+  color: white;
   text-decoration: none;
 }
 
-/* ------ product Browse page -----*/
+/* ------------------- Product Browse Page ---------------*/
 
-.browseBar {
-  background: #f6f6e3;
-}
-
-.small-container {
-  max-width: 1080px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.productsRow {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.products-col-3 {
-  flex-basis: 33%;
-  padding: 10px;
-  min-width: 200px;
-  margin-bottom: 50px;
+.grid {
+  margin: 80px;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-.products-col-3 img {
+.gridCell img {
   width: 100%;
 }
+
+.checked {
+  color: #c2dbc1;
 }
