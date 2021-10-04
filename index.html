@@ -7,33 +7,40 @@
     <title>Muddy Paws Adventure | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--- logo and profile/cart section -->
-    <div class="logo">
-      <img src="image/logo.png" width="240px" alt="Muddy Paws Logo" />
-    </div>
-    <div class="profilesAndCart">
-      <img src="image/myAccount.png" width="32px" height="32px" alt="profile" />
-      <img src="image/cart.png" width="32px" height="32px" alt="cart" />
+    <!-- Header section -->
+    <div class="header">
+      <div class="logo">
+        <a href="" alt="logo">
+          <img src="image/logo.png" alt="Muddy Paws Logo" />
+        </a>
+      </div>
+      <div class="searchProfileContainer">
+        <div class="searchBox">
+          <input type="text" placeholder="search..." />
+        </div>
+        <div class="profileContainer">
+          <a href="" alt="myAccount">
+            <img src="image/myAccount.png" alt="myaccount" />
+          </a>
+          <a href="" alt="myAccount">
+            <img src="image/cart.png" alt="cart" />
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!--- pink navigation bar -->
+    <!-- Navigation bar -->
     <nav>
-      <ul>
-        <li><a href="">Harness</a></li>
-        <li><a href="">Leash</a></li>
-        <li><a href="">Storage</a></li>
-        <li><a href="">Gears</a></li>
-        <li><a href="">Toys</a></li>
-      </ul>
+      <a href="">Harness</a>
+      <a href="">Leash</a>
+      <a href="">Storage</a>
+      <a href="">Gear</a>
+      <a href="">Toys</a>
     </nav>
-    <!---  hero section -->
+    <!---  Hero section -->
     <div class="heroSection">
       <div class="heroCol-1">
         <img src="image/mainHero.png" alt="Main Hero Image" />
@@ -57,106 +64,126 @@
       </div>
     </div>
 
-    <div id="shopByActivity">
+    <!-- Divider -->
+    <div class="textDivider">
       <h1>Shop by Activity</h1>
     </div>
-    <!--- main body section -->
-    <div class="mainSection">
-      <!--- first row of thumbnails --->
-      <div class="activityThumbnail">
-        <div class="thumbnailCol-2">
+
+    <!-- Activity Section -->
+    <div class="activitySection">
+      <!--- First Row --->
+      <div class="row-1-container">
+        <div class="row-1-col">
           <img src="image/swimming.png" alt="swimming" />
-          <div class="thumbnailTextBig">
-            <h2>Swimming</h2>
-            <h3>View Products</h3>
+          <div class="row-1-overlayText">
+            <h3>Swimming</h3>
+            <a href="">
+              <p>View Products</p>
+            </a>
           </div>
         </div>
-        <div class="thumbnailCol-2">
+        <div class="row-1-col">
           <img src="image/hiking.png" alt="hiking" />
-          <div class="thumbnailTextBig">
-            <h2>Hiking</h2>
-            <h3>View Products</h3>
+          <div class="row-1-overlayText">
+            <h3>Hiking</h3>
+            <a href="">
+              <p>View Products</p>
+            </a>
           </div>
         </div>
       </div>
 
-      <!---- second row of thumbnails ------>
-      <div class="activityThumbnail">
-        <div class="thumbnailCol-4">
+      <!-- Second Row  -->
+      <div class="row-2-container">
+        <div class="row-2-col">
           <img src="image/kayaking.png" alt="kayaking" />
-          <div class="thumbnailTextSmall">
+          <div class="row-2-overlayText">
             <h3>Kayaking</h3>
-            <h3>View Products</h3>
+            <a href="">
+              <p>View Products</p>
+            </a>
           </div>
         </div>
-        <div class="thumbnailCol-4">
+        <div class="row-2-col">
           <img src="image/trailing.png" alt="trailing" />
-          <div class="thumbnailTextSmall">
+          <div class="row-2-overlayText">
             <h3>Trailing</h3>
-            <h3>View Products</h3>
+            <a href="">
+              <p>View Products</p>
+            </a>
           </div>
         </div>
-        <div class="thumbnailCol-4">
+        <div class="row-2-col">
           <img src="image/camping.png" alt="camping" />
-          <div class="thumbnailTextSmall">
+          <div class="row-2-overlayText">
             <h3>Camping</h3>
-            <h3>View Products</h3>
+            <a href="">
+              <p>View Products</p>
+            </a>
           </div>
         </div>
-        <div class="thumbnailCol-4">
+        <div class="row-2-col">
           <img src="image/flying.png" alt="flying" />
-          <div class="thumbnailTextSmall">
+          <div class="row-2-overlayText">
             <h3>Flying</h3>
-            <h3>View Products</h3>
+            <a href="">
+              <p>View Products</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
+    <!-- Empty divider -->
+    <div class="emptyDivider"></div>
 
-    <!--- footer --->
+    <!--- Footer --->
     <div class="footer">
-      <div class="container">
-        <div class="footerRow">
-          <div class="footer-col-1">
-            <h3>SHOP</h3>
-            <ul>
-              <li>Harness</li>
-              <li>Leash</li>
-              <li>Storage</li>
-              <li>Gears</li>
-              <li>Toys</li>
-            </ul>
-          </div>
-          <div class="footer-col-2">
-            <h3>INFO</h3>
-            <ul>
-              <li>About</li>
-              <li>Blog</li>
-              <li>Reviews</li>
-              <li>Careers</li>
-            </ul>
-          </div>
-          <div class="footer-col-3">
-            <h3>HELP</h3>
-            <ul>
-              <li>Contact</li>
-              <li>FAQ</li>
-              <li>Account</li>
-              <li>Shipping</li>
-            </ul>
-          </div>
+      <div class="linkContainer">
+        <div class="link-col">
+          <h3>SHOP</h3>
+          <ul>
+            <li>Harness</li>
+            <li>Leash</li>
+            <li>Storage</li>
+            <li>Gears</li>
+            <li>Toys</li>
+          </ul>
+        </div>
+        <div class="link-col">
+          <h3>INFO</h3>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Reviews</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="link-col">
+          <h3>HELP</h3>
+          <ul>
+            <li>Contact</li>
+            <li>FAQ</li>
+            <li>Account</li>
+            <li>Shipping</li>
+          </ul>
         </div>
       </div>
       <div class="followUs">
         <h1>Follow us</h1>
-        <img src="image/facebookLogo.png" alt="facebook" />
-        <img src="image/twitterLogo.png" alt="facebook" />
-        <img src="image/instagramLogo.png" alt="facebook" />
+        <a href="">
+          <img src="image/facebookLogo.png" alt="facebook" />
+        </a>
+        <a href="">
+          <img src="image/twitterLogo.png" alt="twitter" />
+        </a>
+        <a href="">
+          <img src="image/instagramLogo.png" alt="instagram" />
+        </a>
         <p>
           Get exclusive discounts and <br />
           early bird sale by registering
         </p>
-        <a href="" class="signUp"> Sign Up Now</a>
+        <a href="" class="signUp">Sign Up Now</a>
       </div>
     </div>
   </body>
