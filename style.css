@@ -261,10 +261,40 @@ nav a {
 
 /* ------------------- Product Browse Page ---------------*/
 
+.filterSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /*this puts the leftContainer at the top of the filtersection*/
+  height: 240px;
+  background-color: #f6f6e3;
+  padding: 32px 80px;
+}
+
+.rightContainer {
+  align-self: flex-end; /*this overrides the defuault flex-start that was applied above to the whole container; it puts the right container aligned to the bottom*/
+}
+.inlineP {
+  display: inline;
+  /* you don'r really need this line, but i wantd to make the "filter by" and "sort by" line positioned on the same line*/
+}
+
+.filterForm {
+  border: none;
+  color: black;
+  padding: 8px 48px;
+  text-align: left;
+  text-decoration: none;
+  display: inline;
+  font-size: 12px;
+  background-color: white;
+  /* you also don't need this line of code because it's just a plceholder for the filter form, which i just used a btton instead*/
+}
+
 .grid {
   margin: 80px;
   display: grid;
-  grid-gap: 60px;
+  column-gap: 60px;
+  row-gap: 32px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
@@ -275,4 +305,27 @@ nav a {
 
 .checked {
   color: #c2dbc1;
+}
+d
+/*-------------------------Product Detail Page------------------------*/
+
+.detailsGrid {
+  margin: 80px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.gridCell-1 {
+  display: flex;
+}
+.stackedFlexContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  /* why this wouldn't spread the stacked thumbnails vertically from top to bottom?*/
+}
+
+.detailsGrid img {
+  width: 100%;
 }
