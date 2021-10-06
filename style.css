@@ -306,26 +306,73 @@ nav a {
 .checked {
   color: #c2dbc1;
 }
-d
-/*-------------------------Product Detail Page------------------------*/
+
+/*-------------------------Product Detail Page---------------------*/
 
 .detailsGrid {
   margin: 80px;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
 }
 
-.gridCell-1 {
+.grid-cell-1 {
   display: flex;
 }
-.stackedFlexContainer {
+
+.stackedThumbnailFlexContainer {
   display: flex;
   flex-direction: column;
+  flex-basis: 20%;
   align-content: space-between;
   /* why this wouldn't spread the stacked thumbnails vertically from top to bottom?*/
 }
 
+.singleThumbnailFlexContainer {
+  flex-basis: 80%;
+}
 .detailsGrid img {
   width: 100%;
+}
+
+.grid-cell-2 h1 {
+  font-size: 52px;
+}
+
+.colorOptions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.color1 {
+  height: 32px;
+  width: 32px;
+  background-color: red;
+}
+.color2 {
+  height: 32px;
+  width: 32px;
+  background-color: red;
+}
+.color3 {
+  height: 32px;
+  width: 32px;
+  background-color: red;
+}
+.color4 {
+  height: 32px;
+  width: 32px;
+  background-color: red;
+}
+
+.priceAndATC {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ATCbutton {
+  background: rgb(223, 106, 106);
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
 }
