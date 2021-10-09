@@ -64,7 +64,7 @@ nav a {
   margin-right: 48px;
 }
 
-/*-- heroSeciton-- */
+/*-- heroSection-- */
 .heroSection {
   display: flex;
   align-items: center;
@@ -100,11 +100,11 @@ nav a {
   font-family: Poppins;
   font-style: normal;
   font-size: 16px;
-  line-height: 200%; 
+  line-height: 200%;
 }
 
 .spacer {
-  height: 40px
+  height: 40px;
 }
 
 .heroCol-1 img {
@@ -313,10 +313,10 @@ nav a {
 }
 
 select {
-  text-align: :center;
+  text-align: left;
   font-size: 16px;
   margin-left: 10px;
-  width: 120px
+  width: 134px;
 }
 
 .rightContainer {
@@ -325,18 +325,6 @@ select {
 .inlineP {
   display: inline;
   /* you don'r really need this line, but i wantd to make the "filter by" and "sort by" line positioned on the same line*/
-}
-
-.filterForm {
-  border: none;
-  color: black;
-  padding: 8px 48px;
-  text-align: left;
-  text-decoration: none;
-  display: inline;
-  font-size: 12px;
-  background-color: white;
-  /* you also don't need this line of code because it's just a plceholder for the filter form, which i just used a btton instead*/
 }
 
 .grid {
@@ -359,11 +347,13 @@ select {
 /*-------------------------Product Detail Page---------------------*/
 
 .detailsGrid {
-  margin: 80px;
+  margin: 40px;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
 }
+
+/*----- grid 1 ---------*/
 
 .grid-cell-1 {
   display: flex;
@@ -372,57 +362,165 @@ select {
 .stackedThumbnailFlexContainer {
   display: flex;
   flex-direction: column;
-  flex-basis: 20%;
-  vertical-align: justify;
+  flex-basis: 30%;
+  align-content: space-between;
   /* why this wouldn't spread the stacked thumbnails vertically from top to bottom?*/
 }
 
-.singleThumbnailFlexContainer {
-  flex-basis: 80%;
+.stackedThumbnailFlexContainer img {
+  width: 100%;
+  padding: 12px;
 }
+
+.singleThumbnailFlexContainer {
+  flex-basis: 70%;
+}
+
+.singleThumbnailFlexContainer img {
+  width: 100%;
+  padding: 12px;
+}
+
 .detailsGrid img {
   width: 100%;
 }
 
+.grid-cell-2 {
+  padding: 28px;
+}
+.grid-cell-2 p {
+  color: rgb(223, 106, 106);
+}
 .grid-cell-2 h1 {
-  font-size: 52px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.grid-cell-2 span {
+  padding: 4px;
+}
+
+.spacer1 {
+  height: 40px;
 }
 
 .colorOptions {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  font-size: 28px;
 }
 
-.color1 {
-  height: 32px;
-  width: 32px;
-  background-color: red;
-}
-.color2 {
-  height: 32px;
-  width: 32px;
-  background-color: red;
-}
-.color3 {
-  height: 32px;
-  width: 32px;
-  background-color: red;
-}
-.color4 {
-  height: 32px;
-  width: 32px;
-  background-color: red;
+.colorOptions input[type="radio"] {
+  opacity: 0;
+  width: 0;
 }
 
-.priceAndATC {
+#color1 {
+  display: inline-block;
+  background-color: rgb(219, 175, 175);
+  padding: 20px;
+
+  border-radius: 4px;
+}
+
+#color2 {
+  display: inline-block;
+  background-color: #c4c4c4;
+  padding: 20px;
+
+  border-radius: 4px;
+}
+#color3 {
+  display: inline-block;
+  background-color: #c2dbc1;
+  padding: 20px;
+
+  border-radius: 4px;
+}
+#color4 {
+  display: inline-block;
+  background-color: #6c5070;
+  padding: 20px;
+
+  border-radius: 4px;
+}
+#color5 {
+  display: inline-block;
+  background-color: #333333;
+  padding: 20px;
+
+  border-radius: 4px;
+}
+
+.sizeOptions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+}
+
+.spacer2 {
+  height: 180px;
+}
+
+.ATCContainer {
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
 
+.ATCContainer h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
 .ATCbutton {
   background: rgb(223, 106, 106);
-  padding: 8px 30px;
-  margin: 30px 0;
+  padding: 12px 30px;
   border-radius: 30px;
+  transition: background 0.5s;
+  text-decoration: none;
+  color: white;
 }
+
+.ATCbutton:hover {
+  background: rgb(219, 175, 175);
+}
+
+.grid-cell-3 {
+  padding: 0 32px;
+  font-size: 28px;
+}
+
+.lineContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.lineContainer img {
+  width: 28px;
+  height: 28px;
+}
+
+.grid-cell-4 {
+  font-size: 20px;
+  padding: 0 32px;
+}
+
+.reviewBackground {
+  margin: 80px;
+  background-color: rgba(223, 106, 106, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.reviewCol {
+  flex-basis: 50%;
+  border-radius: 20px;
+  margin: 18px;
+  padding: 20px;
+  background-color: white;
+  height: 200px;
 }
