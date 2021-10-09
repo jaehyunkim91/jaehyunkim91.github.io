@@ -61,7 +61,6 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  font-weight: 400;
   margin-right: 48px;
 }
 
@@ -71,17 +70,41 @@ nav a {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 40px;
+  position: relative;
 }
 
+.heroBackground {
+  width: 100%;
+  background-color: #f6f6e3;
+  height: 540px;
+  z-index: -999;
+  position: absolute;
+  top: -40px;
+}
 .heroCol-1 {
   flex-basis: 68%;
   min-width: 300px;
 }
 
+.heroImage {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .heroCol-2 {
   flex-basis: 32%;
   min-width: 300px;
   padding-left: 20px;
+}
+
+.heroCol-2 p {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 200%; 
+}
+
+.spacer {
+  height: 40px
 }
 
 .heroCol-1 img {
@@ -101,20 +124,34 @@ nav a {
   position: absolute;
   top: 32px;
   left: 42px;
-  background: rgba(240, 239, 239, 0.1);
+  background: #ffffff;
+  filter: blur(72px);
+}
+
+.heroImageTextOverlay {
+  position: absolute;
+  top: 32px;
+  left: 42px;
+}
+
+.heroImageTextOverlay h1 {
+  font-size: 42px;
+  line-height: 132%;
 }
 
 .CTAbutton {
   display: inline-block;
   background: rgb(223, 106, 106);
   padding: 8px 30px;
-  margin: 30px 0;
+  margin: 40px 80px;
   border-radius: 30px;
   transition: background 0.5s;
+  text-decoration: none;
+  color: white;
 }
 
 .CTAbutton:hover {
-  background: rgb(132, 106, 106);
+  background: rgb(219, 175, 175);
 }
 
 /*-- Divider--*/
@@ -234,6 +271,10 @@ nav a {
   justify-content: space-between;
 }
 
+.link-col ul {
+  line-height: 200%;
+}
+
 .footer ul {
   list-style-type: none;
 }
@@ -242,6 +283,7 @@ nav a {
   width: 300px;
   justify-content: center;
 }
+
 .followUs a img {
   width: 32px;
   height: 32px;
@@ -265,9 +307,16 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /*this puts the leftContainer at the top of the filtersection*/
-  height: 240px;
+  height: 160px;
   background-color: #f6f6e3;
-  padding: 32px 80px;
+  padding: 12px 80px;
+}
+
+select {
+  text-align: :center;
+  font-size: 16px;
+  margin-left: 10px;
+  width: 120px
 }
 
 .rightContainer {
@@ -324,7 +373,7 @@ nav a {
   display: flex;
   flex-direction: column;
   flex-basis: 20%;
-  align-content: space-between;
+  vertical-align: justify;
   /* why this wouldn't spread the stacked thumbnails vertically from top to bottom?*/
 }
 
@@ -375,4 +424,5 @@ nav a {
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
+}
 }

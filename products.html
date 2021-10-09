@@ -27,7 +27,7 @@
     <!-- Header section -->
     <div class="header">
       <div class="logo">
-        <a href="" alt="logo">
+        <a href="index.html" alt="logo">
           <img src="image/logo.png" alt="Muddy Paws Logo" />
         </a>
       </div>
@@ -59,80 +59,108 @@
     <div class="filterSection">
       <div class="leftContainer">
         <h1>Shop Harness</h1>
-        <p>Home - All - Harness</p>
+        <p>Home > All > Harness</p>
       </div>
       <div class="rightContainer">
-        <p class="inlineP">filter by:</p>
-        <button type="button" class="filterForm">Color</button>
-        <button type="button" class="filterForm">Size</button>
-        <br />
-        <p class="inlineP">sort by:</p>
-        <button type="button" class="filterForm">Price</button>
+        <form class="filterBy" action>
+          <label for="filter"> Filter By: </label>
+          <select name="colors">
+            <option value="all">all</option>
+            <option value="strawberry">strawberry</option>
+            <option value="blackberry">blackberry</option>
+            <option value="crazy berry">crazy berry</option>
+            <option value="fire orange">fire orange</option>
+          </select>
+          <select name="size">
+            <option value="all">all</option>
+            <option value="tiny">tiny</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+          </select>
+          <br />
+          <label for="sort"> Price By: </label>
+          <select name="price">
+            <option value="nonr">none</option>
+            <option value="lowest">lowest</option>
+            <option value="highest">highest</option>
+          </select>
+        </form>
       </div>
     </div>
     <!--- Gird for Products --->
     <div class="grid">
       <div class="gridCell">
-        <img src="image/truFitHarness.png" />
+        <a href="products.html">
+          <img src="image/truFitHarness.png" />
+        </a>
         <h2>Tru-fit Dog Harness</h2>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <p>$29.99</p>
+        <span> (31) </span>
+        <p>$21.99</p>
       </div>
       <div class="gridCell">
-        <img src="image/comfortHarness.png" />
-        <h2>Tru-fit Dog Harness</h2>
+        <a href=""> <img src="image/comfortHarness.png" /></a>
+        <h2>Comfort Dog Harness</h2>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <p>$29.99</p>
+        <span> (27) </span>
+        <p>$45.99</p>
       </div>
       <div class="gridCell">
-        <img src="image/nylonDogHarness.png" />
-        <h2>Tru-fit Dog Harness</h2>
+        <a href=""> <img src="image/nylonDogHarness.png" /> </a>
+        <h2>Nylon Dog Harness</h2>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <p>$29.99</p>
+        <span> (25) </span>
+        <p>$13.09</p>
       </div>
       <div class="gridCell">
-        <img src="image/stretchyHarness.png" />
-        <h2>Tru-fit Dog Harness</h2>
+        <a href="">
+          <img src="image/stretchyHarness.png" />
+        </a>
+        <h2>Stretchy Dog Harness</h2>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <p>$29.99</p>
+        <span> (32) </span>
+        <p>$15.00</p>
       </div>
       <div class="gridCell">
-        <img src="image/leatherDogHarness.png" />
-        <h2>Tru-fit Dog Harness</h2>
+        <a href=""> <img src="image/leatherDogHarness.png" /> </a>
+        <h2>Leather Dog Harness</h2>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <p>$29.99</p>
+        <span> (54) </span>
+        <p>$13.99</p>
       </div>
       <div class="gridCell">
-        <img src="image/grailHarness.png" />
+        <a href=""> <img src="image/grailHarness.png" /> </a>
         <h2>Tru-fit Dog Harness</h2>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <p>$29.99</p>
+        <span> (2) </span>
+        <p>$12.99</p>
       </div>
       <div class="gridCell">
-        <img src="image/pupHarness.png" />
-        <h2>Tru-fit Dog Harness</h2>
+        <a href=""> <img src="image/pupHarness.png" /> </a>
+        <h2>Pug Harness</h2>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
+        <span> (17) </span>
         <p>$29.99</p>
       </div>
     </div>
