@@ -312,6 +312,10 @@ nav a {
   padding: 12px 80px;
 }
 
+.filterSection a {
+  text-decoration: none;
+  color: black;
+}
 select {
   text-align: left;
   font-size: 16px;
