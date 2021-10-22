@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tru-Fit Dog Harness</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,6 +44,7 @@
           <a href="">
             <img src="image/cart.png" alt="cart" />
           </a>
+          <input type="text" id="number" value="0" />
         </div>
       </div>
     </div>
@@ -71,12 +74,16 @@
     <div class="detailsGrid">
       <div class="grid-cell-1">
         <div class="stackedThumbnailFlexContainer">
-          <img src="image/detailPageSmall1.png" alt="thumbnail" />
-          <img src="image/detailPageSmall2.png" alt="thumbnail" />
-          <img src="image/detailPageSmall3.png" alt="thumbnail" />
+          <img id="firstImg" src="image/detailPageSmall1.png" alt="thumbnail" />
+          <img
+            id="secondImg"
+            src="image/detailPageSmall2.png"
+            alt="thumbnail"
+          />
+          <img id="thirdImg" src="image/detailPageSmall3.png" alt="thumbnail" />
         </div>
         <div class="singleThumbnailFlexContainer">
-          <img src="image/detailPageLarge.png" alt="thumbnail" />
+          <img id="fourthImg" src="image/detailPageLarge.png" alt="thumbnail" />
         </div>
       </div>
       <div class="grid-cell-2">

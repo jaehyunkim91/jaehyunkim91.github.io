@@ -424,36 +424,36 @@ select {
   display: inline-block;
   background-color: rgb(219, 175, 175);
   padding: 20px;
-
   border-radius: 4px;
+  cursor: pointer;
 }
 
 #color2 {
   display: inline-block;
   background-color: #c4c4c4;
   padding: 20px;
-
+  cursor: pointer;
   border-radius: 4px;
 }
 #color3 {
   display: inline-block;
   background-color: #c2dbc1;
   padding: 20px;
-
+  cursor: pointer;
   border-radius: 4px;
 }
 #color4 {
   display: inline-block;
   background-color: #6c5070;
   padding: 20px;
-
+  cursor: pointer;
   border-radius: 4px;
 }
 #color5 {
   display: inline-block;
   background-color: #333333;
   padding: 20px;
-
+  cursor: pointer;
   border-radius: 4px;
 }
 
@@ -528,18 +528,28 @@ select {
   background-color: white;
   height: 200px;
 }
+
+#number {
+  width: 16px;
+  border: none;
+}
+
 /* ------------------- Cart Page ---------------*/
 .cartContainer {
   display: flex;
-  padding: 40px 32px;
 }
 
 .cartLeftCol {
-  flex-basis: 40%;
+  flex-basis: 54%;
+  padding: 60px 60px;
 }
 
 .cartSpacer {
-  height: 140px;
+  height: 40px;
+}
+
+.inputWrapper {
+  width: 88%;
 }
 .cartContainer h2 {
   font-size: 18px;
@@ -549,7 +559,6 @@ select {
 
 .fullName {
   display: flex;
-  width: 88%;
   justify-content: space-between;
 }
 
@@ -560,7 +569,7 @@ select {
   padding: 6px 12px;
   font-size: 16px;
   border-radius: 3px;
-  width: 88%;
+  width: 100%;
 }
 
 .customerInputShort input[type="text"] {
@@ -570,14 +579,13 @@ select {
   padding: 6px 12px;
   font-size: 16px;
   border-radius: 3px;
-  width: 260px;
+  width: 200px;
 }
 
 .dropDown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 88%;
 }
 
 .country select {
@@ -587,7 +595,7 @@ select {
   padding: 6px 12px;
   font-size: 16px;
   border-radius: 3px;
-  width: 260px;
+  width: 200px;
 }
 .state select {
   border: 2px solid #6c5070;
@@ -596,11 +604,11 @@ select {
   padding: 6px 12px;
   font-size: 16px;
   border-radius: 3px;
-  width: 260px;
+  width: 200px;
 }
 
 .cartSpacer2 {
-  height: 80px;
+  height: 40px;
 }
 
 .continueBilling {
@@ -613,7 +621,85 @@ select {
   border-radius: 4px;
 }
 
+/* cart right colum*/
+
 .cartRightCol {
-  flex-basis: 60%;
+  flex-basis: 46%;
   background-color: #f6f6e3;
+}
+
+.cartContentContainer {
+  padding: 60px 60px;
+}
+
+.itemContainer {
+  margin-top: 40px;
+  display: flex;
+  height: 200px;
+}
+
+.cartThumbnail {
+  flex-basis: 36%;
+}
+
+.itemContainer img {
+  width: 100%;
+}
+
+.cartText {
+  flex-basis: 64%;
+  padding-left: 12px;
+}
+
+.cartText h4 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.cartText p {
+  font-size: 14px;
+}
+
+.cartText input[type="radio"] {
+  opacity: 0;
+  width: 0;
+}
+#cartColor1 {
+  display: inline-block;
+  background-color: rgb(219, 175, 175);
+  margin-top: 4px;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+.itemQuantity {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemQuantity select {
+  width: 80px;
+}
+
+.remove {
+  font-size: 12px;
+}
+
+#cartColor2 {
+  display: inline-block;
+  background-color: rgb(29, 209, 209);
+  margin-top: 4px;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtotal h2 {
+  font-size: 24px;
+  font-weight: bolder;
 }
