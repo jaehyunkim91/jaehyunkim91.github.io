@@ -19,10 +19,10 @@ function toStrawberry() {
   if (document.querySelector("#color1")) {
     removeBorder()
     document.querySelector("#color1").style.border = "2px solid blue"
-    document.querySelector("#firstImg").src = "img/"
-    document.querySelector("#secondImg").src = "image/detailPageSmall2.png"
-    document.querySelector("#thirdImg").src = "image/detailPageSmall3.png"
-    document.querySelector("#fourthImg").src = "image/detailPageLarge.png"
+    document.querySelector("#firstImg").src = "image/colorChangeSmall.png"
+    document.querySelector("#secondImg").src = "image/colorChangeSmall2.png"
+    document.querySelector("#thirdImg").src = "image/colorChangeSmall3.png"
+    document.querySelector("#fourthImg").src = "image/colorChangeBig.png"
   }
 }
 
