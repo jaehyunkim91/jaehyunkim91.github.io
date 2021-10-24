@@ -98,48 +98,61 @@
         <div class="spacer1"></div>
         <div class="colorOptions">
           <div>Color:</div>
-          <div>
+          <div class="radio-group">
             <input
               type="radio"
               id="strawberry"
               name="colors"
               value="strawberry"
             />
-            <label id="color1" for="strawberry"> </label>
+            <label id="color1" for="strawberry" onclick="toStrawberry()">
+            </label>
             <input
               type="radio"
               id="blackberry"
               name="colors"
               value="blackberry"
             />
-            <label id="color2" for="blackberry"></label>
+            <label
+              id="color2"
+              for="blackberry"
+              onclick="toBlackberry()"
+            ></label>
             <input
               type="radio"
               id="crazyberry"
               name="colors"
               value="crazyberry"
             />
-            <label id="color3" for="crazyberry"></label>
+            <label
+              id="color3"
+              for="crazyberry"
+              onclick="toCrazyberry()"
+            ></label>
             <input
               type="radio"
               id="fireorange"
               name="colors"
               value="fireorange"
             />
-            <label id="color4" for="fireorange"></label>
+            <label
+              id="color4"
+              for="fireorange"
+              onclick="toFireOrange()"
+            ></label>
             <input
               type="radio"
               id="spacegrey"
               name="colors"
               value="spacegrey"
             />
-            <label id="color5" for="spacegrey"></label>
+            <label id="color5" for="spacegrey" onclick="toSpaceGrey()"></label>
           </div>
         </div>
         <div class="sizeOptions">
           <div>Size:</div>
           <form class="size">
-            <select name="size">
+            <select class="sizeSelect" name="size">
               <option value="all">select one</option>
               <option value="tiny">tiny</option>
               <option value="small">small</option>
@@ -152,7 +165,9 @@
         <div class="ATCContainer">
           <h2>$13.09</h2>
           <div>
-            <a href="" class="ATCbutton">Add to Cart</a>
+            <button class="ATCbutton" onclick="incrementValue()">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>

@@ -26,7 +26,48 @@ function toStrawberry() {
   }
 }
 
-//add to the cart icon
+function toBlackberry() {
+  if (document.querySelector("#color2")) {
+    removeBorder()
+    document.querySelector("#color2").style.border = "2px solid blue"
+    document.querySelector("#firstImg").src = "image/colorChangeSmall.png"
+    document.querySelector("#secondImg").src = "image/colorChangeSmall2.png"
+    document.querySelector("#thirdImg").src = "image/colorChangeSmall3.png"
+    document.querySelector("#fourthImg").src = "image/colorChangeBig.png"
+  }
+}
+function toCrazyberry() {
+  if (document.querySelector("#color3")) {
+    removeBorder()
+    document.querySelector("#color3").style.border = "2px solid blue"
+    document.querySelector("#firstImg").src = "image/detailPageSmall1.png"
+    document.querySelector("#secondImg").src = "image/detailPageSmall2.png"
+    document.querySelector("#thirdImg").src = "image/colorChangeSmall3.png"
+    document.querySelector("#fourthImg").src = "image/detailPageLarge.png"
+  }
+}
+function toFireOrange() {
+  if (document.querySelector("#color4")) {
+    removeBorder()
+    document.querySelector("#color4").style.border = "2px solid blue"
+    document.querySelector("#firstImg").src = "image/colorChangeSmall.png"
+    document.querySelector("#secondImg").src = "image/colorChangeSmall2.png"
+    document.querySelector("#thirdImg").src = "image/colorChangeSmall3.png"
+    document.querySelector("#fourthImg").src = "image/detailPageLarge.png"
+  }
+}
+function toSpaceGrey() {
+  if (document.querySelector("#color5")) {
+    removeBorder()
+    document.querySelector("#color5").style.border = "2px solid blue"
+    document.querySelector("#firstImg").src = "image/detailPageSmall1.png"
+    document.querySelector("#secondImg").src = "image/detailPageSmall2.png"
+    document.querySelector("#thirdImg").src = "image/colorChangeSmall3.png"
+    document.querySelector("#fourthImg").src = "image/colorChangeBig.png"
+  }
+}
+
+//add to shopping cart
 const size = document.querySelector(".sizeSelect")
 
 function incrementValue() {
